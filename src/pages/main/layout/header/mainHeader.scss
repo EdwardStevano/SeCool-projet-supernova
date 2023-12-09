@@ -127,18 +127,32 @@
   
   .navbar .logo {
     z-index: 5;
-    width: 70px;
+    width: 200px;
+    display: flex;
     text-align: center;
-    height: 70px;
+    height: 30px;
     // background-color: red;
-    background-image: url('../../../../assets/branding/supernova/logo512.png');
+    // background-image: url('../../../../assets/branding/supernova/logo512.png');
     background-size: cover;
     background-position: center;
   }
-  
-  .logo img {
-    width: 120px;
+
+  .logo svg {
+    padding: 5px;
+    fill: #fff;
+    border-radius: 7px;
+    background-color: var(--primaryColor);
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
   }
+
+  .logo span{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--darkFontColor);
+    // margin-top: 3px;
+  } 
   
   .menu {
     list-style: none;

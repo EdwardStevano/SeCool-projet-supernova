@@ -1,0 +1,52 @@
+.super-global-container.presentation{
+    .fade-transition{
+        height: 200px;
+        width: 100vw;
+        background: var(--transitionColor);
+    }
+
+    .super-container-p80.presentation{
+        padding-bottom: 120px;
+    }
+
+    .super-container{
+        background-color: var(--backgroundColor);
+
+        .presentation-title1{
+            color: var(--darkFontColor);
+            width: 65%;
+
+            h1{
+                span{
+                    background: linear-gradient(295deg, rgba(121,58,180,1) 0%, rgb(21, 134, 221) 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent; 
+                }
+            }
+            p{
+                border-bottom: 2px solid var(--darkColorTransparent);
+                padding-bottom: 20px;
+            }
+        }
+
+        .presentation-title2{
+            background-color: var(--fillInput);
+            border-radius: 20px;
+            padding: 15px;
+            width: 400px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+
+            .inner{
+                color: var(--darkFontColor);
+                padding: 10px;
+                border: 3px dotted var(--darkColorTransparent);
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.mogule1{
+    animation: 4s float_Animation2 infinite ease-in-out;
+}

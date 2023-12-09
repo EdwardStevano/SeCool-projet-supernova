@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 import './_langSelection.scss'
 
 // importations des ressources
-import mgFlacg from '../../assets/image/icon/svg/flags/1x1/mg.svg'
-import frFlacg from '../../assets/image/icon/svg/flags/1x1/fr.svg' 
-import enFlacg from '../../assets/image/icon/svg/flags/1x1/us.svg' 
-import arrowCollapse from '../../assets/image/icon/png/icons8_expand_arrow_15px_1.png'
+import mgFlacg from '@assets/icon/svg/flags/1x1/mg.svg'
+import frFlacg from '@assets/icon/svg/flags/1x1/fr.svg' 
+import enFlacg from '@assets/icon/svg/flags/1x1/us.svg' 
+import arrowCollapse from '@assets/icon/png/icons8_expand_arrow_15px_1.png'
 
 
 
@@ -32,14 +32,6 @@ function LangSelection() {
 
   return (
      <div class="language-picker">
-      {/* <form action="" class="language-picker__form">
-          <select name="language-picker-select" id="language-picker-select" onChange={changeLanguage}>
-          <option lang="mg" value="mg"><img src={mgFlacg} alt="Malagasy Flag" width={'10px'}/> </option>
-          <option lang="fr" value="fr" selected>Fr</option>
-          <option lang="en" value="en">En</option>
-          </select>
-      </form>  */}
-
       <div className={`language-picker ${DropdownOpen ? 'open' : ''}`} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
         <div className="language-picker-toggle">
             <img src={localStorage.getItem("i18nextLng") === 'mg' ? mgFlacg : localStorage.getItem("i18nextLng") === 'fr' ? frFlacg : enFlacg} className='flagSelected' alt="Malagasy Flag" width={'14px'}/> 

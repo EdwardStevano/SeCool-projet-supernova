@@ -12,16 +12,13 @@
 
 @keyframes float_Animation2 {
   0% {
-    transform: translatey(0px);
-    transform: rotate(-50deg);
+    transform: translatey(0px) rotate(-50deg);
   }
   50% {
-    transform: translatey(-20px);
-    transform: rotate(-60deg);
+    transform: translatey(-20px) rotate(-60deg);
   }
   100% {
-    transform: translatey(0px);
-    transform: rotate(-50deg);
+    transform: translatey(0px) rotate(-50deg);
   }
 }
 
