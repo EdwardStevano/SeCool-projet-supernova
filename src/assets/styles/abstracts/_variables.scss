@@ -19,7 +19,7 @@
     --scrollColor: rgba(0, 0, 0, 0.3);
 
     /* Font color */
-    --darkFontColor: #030239;
+    --darkFontColor: #242424;
     --lightFontColor: #222e43;
 
     /* Success color */
@@ -37,7 +37,7 @@
     /* linear color */
     --linearColor1: linear-gradient(to right, #00AEEF 0%, #9e61c1 100%); 
     --linearColor2: linear-gradient(to right, #1A90E8 10%, #f7b50e 100%);
-
+    --transitionColor: linear-gradient(180deg, rgba(247, 247, 247,0) 0%, rgba(247, 247, 247,1) 100%);
     /* Supplement color */
     --color1: #FFB000;
     --color2: #D30074;
@@ -99,6 +99,7 @@
     /* linear color */
     --linearColor1: linear-gradient(to right, #6162C1 0%, #00AEEF 100%);
     --linearColor2: linear-gradient(to right, #1A90E8 10%, #f7b50e 100%);
+    --transitionColor: linear-gradient(180deg, rgba(9, 13, 20,0) 0%, rgba(9, 13, 20,1) 100%);
 
     /* Supplement color */
     --color1: #FFB000;

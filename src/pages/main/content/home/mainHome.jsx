@@ -4,14 +4,17 @@ import React from 'react'
 import './mainHome.scss'
 
 import Band from '@components/ui/band/band'
+import MainBanner from './components/banner/mainBanner'
+import MainPresentaion from './components/presentation/presentation'
+import MainCta from './components/cta/cta'
 
 function MainHome() {
   return (
     <div className='super-global-container home'>
-      <div className="super-container-p80 pad-bottom-px50">
-        <h1>Make Brand identities</h1>
-      </div>
-      <Band />
+        <MainBanner />
+        <Band />
+        <MainPresentaion />
+        <MainCta />
     </div>
   )
 }
