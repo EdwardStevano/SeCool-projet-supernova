@@ -10,7 +10,7 @@ import passwordIcon from '@assets/icon/png/icons8_good_pincode_60px.png'
 import doneIcon from '@assets/icon/png/icons8_ok_60px.png'
 import cancelIcon from '@assets/icon/png/icons8_cancel_60px.png'
 import loadIcon from '@assets/icon/png/icons8_stream_60px.png'
-import SignUpImage from '@assets/branding/illustration/Illustration_Login.png'
+import SignUpImage from '@assets/branding/SignUp_Image.png'
 
 function SignUp() {
   const [inputText, setInputText] = state('');
@@ -49,7 +49,7 @@ function SignUp() {
   return (
     <div className='SignUp2 MiddleContent'>
       <div className="signIn-right">
-        <img src={SignUpImage} alt={"SignUp Illustration"} width={'520px'}/>
+        <img src={SignUpImage} alt={"SignUp Illustration"} width={'500px'}/>
       </div>
 
       <div className="signIn-left">

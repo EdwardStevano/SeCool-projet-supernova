@@ -11,6 +11,7 @@ import Problem from "./components/problem/Problem";
 import Solution from "./components/solution/Solution";
 import ListProblem from "./components/listProblem/ListProblem";
 import Perspective from "./components/perspective/Perspective";
+import Contact from "./components/contact/contact";
 
 function MainHome() {
   return (
@@ -19,10 +20,11 @@ function MainHome() {
       <Band />
       <MainPresentaion />
       <MainCta />
-      <Problem />
+      {/* <Problem /> */}
       <ListProblem />
       <Solution />
       <Perspective/>
+      <Contact />
     </div>
   );
 }

@@ -3,7 +3,6 @@
 @use '../parameters/_mixins' as *;
 @use '../parameters/_function' as *;
 
-
 * {
 	@include default_normalize;
 	&::after {
@@ -40,6 +39,7 @@
 body {
 	background-color: var(--backgroundColor);
 	background-image: var(--pointBackground);
+	background-size: cover;
 	overflow-x: hidden;
 }
 

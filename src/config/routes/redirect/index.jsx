@@ -8,8 +8,8 @@ const __Unauthorized = lazy(() => import('@pages/redirect/unauthorized'))
 function NotFoundRoutes() {
   return (
       <Routes>
-        <Route path="/unauthorized" element={<__Unauthorized />} />
-        <Route component={<__NotFound />} />
+        <Route path="/unauthorized" component={<__Unauthorized />} />
+        <Route path="/not"  component={<__NotFound />} />
       </Routes>
   );
 }

@@ -67,6 +67,10 @@
    opacity: .7;
 }
 
+.passForget .link-passForget{
+    color: var(--darkFontColor);
+}
+
 .remreber-check:hover, .passForget:hover{
    opacity: 1;
 }
@@ -80,7 +84,7 @@
 
 .btn-group button, .btn-group .btn-login, .btn-group .btn-signUp{
     border-radius: 30px;
-    border: none;
+    border: 1px solid transparent;
     padding: 8px 24px;
     font-family: Poppins, sans-serif;
     font-size: 13px;
