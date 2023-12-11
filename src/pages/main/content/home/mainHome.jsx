@@ -10,6 +10,7 @@ import MainCta from "./components/cta/cta";
 import Problem from "./components/problem/Problem";
 import Solution from "./components/solution/Solution";
 import ListProblem from "./components/listProblem/ListProblem";
+import Perspective from "./components/perspective/Perspective";
 
 function MainHome() {
   return (
@@ -21,6 +22,7 @@ function MainHome() {
       <Problem />
       <ListProblem />
       <Solution />
+      <Perspective/>
     </div>
   );
 }

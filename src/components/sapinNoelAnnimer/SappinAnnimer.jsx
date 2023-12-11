@@ -8,7 +8,6 @@ const SappinAnnimer = () => {
   function handleView(inview) {
     if (inview) {
       setView(true);
-    } else {
     }
   }
   return (
