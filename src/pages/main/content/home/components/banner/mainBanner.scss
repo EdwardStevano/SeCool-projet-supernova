@@ -4,6 +4,7 @@
     line-height: 70px;
     color: var(--darkFontColor);
     display: flex;
+    font-weight: 200;
   }
 
   .line1-prime {
@@ -53,7 +54,7 @@
   }
 
   p {
-    font-weight: 400;
+    font-weight: 300;
     opacity: 0.8;
     color: var(--darkFontColor);
   }
@@ -82,6 +83,12 @@
   }
 
   .fade-component {
+    opacity: 0;
+  }
+}
+
+.side-50.spline{
+  img{
     opacity: 0;
   }
 }

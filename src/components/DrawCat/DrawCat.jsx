@@ -2,6 +2,7 @@ import React from "react";
 import "./drawCat.scss";
 import { useEffect } from "react";
 import { useRef } from "react";
+
 const DrawCat = ({ parentRef }) => {
   const containerRef = useRef(null);
   const pathRef = useRef(null);

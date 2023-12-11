@@ -19,10 +19,10 @@ function MainBanner() {
 
       timeline.to(".fade-component", {
         opacity: 1,
-        delay: 1,
-        ease: "power3.inOut",
-        y: -10,
-        duration: 0.6,
+        delay: 0,
+        ease:"power4.inOut",
+        y: -40,
+        duration: 0.5,
         stagger: 0.3,
       });
     });
@@ -51,7 +51,7 @@ function MainBanner() {
             <div className="end-line fade-component">
               <h1>écoles.</h1>
               <span>
-                <img src={SeCool_Star} alt="3D floating box" width={"60px"} />
+                <img src={SeCool_Star} alt="3D floating box" width={"40px"} />
               </span>
             </div>
 
@@ -74,8 +74,8 @@ function MainBanner() {
           </div>
           <h1></h1>
         </div>
-        <div className="side-50 spline fade-component">
-          <img src={BannerImage} alt="" width={'500px'} />
+        <div className="side-50 spline">
+          <img src={BannerImage} alt="" width={'500px'} className="fade-component" />
         </div>
       </div>
     </div>

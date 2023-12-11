@@ -10,6 +10,7 @@ import MainCta from "./components/cta/cta";
 import Problem from "./components/problem/Problem";
 import Solution from "./components/solution/Solution";
 import ListProblem from "./components/listProblem/ListProblem";
+import Contact from "./components/contact/contact";
 
 function MainHome() {
   return (
@@ -18,9 +19,10 @@ function MainHome() {
       <Band />
       <MainPresentaion />
       <MainCta />
-      <Problem />
+      {/* <Problem /> */}
       <ListProblem />
       <Solution />
+      <Contact />
     </div>
   );
 }
