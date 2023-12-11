@@ -1,31 +1,33 @@
-import React, { useEffect, useRef } from 'react'
-import gsap from 'gsap';
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 // Style importation
-import './band.scss'
-import { ScrollTrigger } from 'gsap/all';
+import "./band.scss";
+import { ScrollTrigger } from "gsap/all";
 
 function Band() {
   const animateRef = useRef();
 
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-        const bannerAnimate = gsap.context(() =>{
-            const timeline = gsap.timeline();
-            timeline.to(".marquee-wrapper", {
-                x: -700,
-                ease: 'sine.inOut',
-                duration: 1,
-            });
-            ScrollTrigger.create({
-              animation: timeline,
-              scrub: 3,
-              start: 'top center',
-            })
-        })
-    
-
-    }, animateRef)
+    const bannerAnimate = gsap.context(() => {
+      gsap.to(".marquee", {
+        opacity: 1,
+        delay: 3,
+      });
+      const timeline = gsap.timeline();
+      timeline.to(".marquee-wrapper", {
+        x: -5000,
+        ease: "sine.inOut",
+        duration: 1,
+      });
+      ScrollTrigger.create({
+        animation: timeline,
+        scrub: 3,
+        start: "top center",
+      });
+    });
+  }, animateRef);
 
   return (
     <div class="marquee" ref={animateRef}>
@@ -58,7 +60,7 @@ function Band() {
         </div>
       </h3>
     </div>
-  )
+  );
 }
 
-export default Band
+export default Band;

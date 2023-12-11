@@ -1,81 +1,87 @@
-.banner .title-content{
-    .line1{
-        font-size: 30px;
-        line-height: 70px;
-        color: var(--darkFontColor);
-        display: flex;
+.banner .title-content {
+  .line1 {
+    font-size: 30px;
+    line-height: 70px;
+    color: var(--darkFontColor);
+    display: flex;
+  }
+
+  .line1-prime {
+    display: flex;
+    align-items: center;
+    @extend .line1;
+
+    span {
+      margin-left: 20px;
+      // transform: rotate(-6deg);
+      background-image: url("../../../../../../assets/branding/background/multiColor_Background.jpg");
+      background-size: cover;
+      font-size: 12px;
+      height: 50px;
+      width: 160px;
+
+      img {
+        position: relative;
+        top: -18px;
+        left: 15px;
+      }
+    }
+  }
+
+  .line2 {
+    @extend .line1;
+
+    span {
+      background: linear-gradient(
+        295deg,
+        rgba(121, 58, 180, 1) 0%,
+        rgba(69, 109, 252, 1) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  .end-line {
+    @extend .line1;
+
+    img {
+      margin-top: 8px;
+      margin-left: 10px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    opacity: 0.8;
+    color: var(--darkFontColor);
+  }
+
+  .form-banner {
+    background-color: var(--fillInput);
+    margin-top: 30px;
+    width: 90%;
+    border-radius: 26px;
+
+    button {
+      margin: 5px;
+      background-color: var(--primaryColor);
+      padding: 7px;
+      color: #fff;
+      border-radius: 15px;
     }
 
-    .line1-prime{
-        display: flex;
-        align-items: center;
-        @extend .line1;
-
-        span{
-            margin-left: 20px;
-            // transform: rotate(-6deg);
-            background-image: url('../../../../../../assets/branding/background/multiColor_Background.jpg');
-            background-size: cover;
-            font-size: 12px;
-            height: 50px;
-            width: 160px;
-
-            img{
-                position: relative;
-                top: -18px;
-                left: 15px; 
-            }
-        }
+    input {
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: transparent;
+      color: var(--darkFontColor);
     }
+  }
 
-    .line2{
-        @extend .line1;
-
-        span{
-            background: linear-gradient(295deg, rgba(121,58,180,1) 0%, rgba(69,109,252,1) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent; 
-            
-        }
-    }
-
-    .end-line{
-        @extend .line1;
-
-        img{
-            margin-top: 8px;
-            margin-left: 10px;
-        }
-    }
-
-    p{
-        font-weight: 400;
-        opacity: 0.8;
-        color: var(--darkFontColor);
-    }
-
-    .form-banner{
-        background-color: var(--fillInput);
-        margin-top: 30px;
-        width: 90%;
-        border-radius: 26px;
-
-        button{
-            margin: 5px;
-            background-color: var(--primaryColor);
-            padding: 7px;
-            color: #fff;
-            border-radius: 15px;
-        }
-
-        input{
-            border: none;
-            padding: 10px 20px;
-            border-radius: 30px;
-            background-color: transparent;
-            color: var(--darkFontColor);
-        }
-
-    }
+  .fade-component {
+    opacity: 0;
+  }
 }

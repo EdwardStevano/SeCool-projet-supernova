@@ -8,7 +8,7 @@ import image3 from "../../../../../../assets/branding/img/400x500/img17.jpg";
 import StyledCard from "./content/card/styledCard/StyledCard";
 import { InView } from "react-intersection-observer";
 import { gsap } from "gsap";
-import { MotionPathPlugin } from "gsap/all";
+import { MotionPathPlugin, ScrollTrigger } from "gsap/all";
 
 const Problem = () => {
   const imgtab = [
@@ -23,7 +23,7 @@ const Problem = () => {
     },
   ];
 
-  gsap.registerPlugin(MotionPathPlugin);
+  gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
   function FadeUp(view) {
     if (view) {
@@ -38,7 +38,7 @@ const Problem = () => {
         duration: 1,
       });
 
-      gsap.to(".fusee", {
+      timeline2.to(".fusee", {
         motionPath: {
           path: "#Tracé_1",
           align: "#Tracé_1",
@@ -48,6 +48,12 @@ const Problem = () => {
         transformOrigin: "50% 50%",
         duration: 5,
         ease: "power1",
+      });
+      ScrollTrigger.create({
+        animation: timeline2,
+        start: "top 200%",
+        end: "bottom 200%",
+        scrub: 0.5,
       });
 
       gsap.to(".blocLetters div", {
@@ -450,13 +456,13 @@ const Problem = () => {
             />
           </svg>
         </div>
-        <div className="card-content">
+        {/* <div className="card-content">
           {imgtab.map((imgElement) => (
             <div className="card-element">
               <StyledCard image={imgElement.img} />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </InView>
   );
