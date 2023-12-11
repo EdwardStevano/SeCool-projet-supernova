@@ -24,20 +24,13 @@
 
 @keyframes float_Animation3 {
   0% {
-    transform: translatey(0px);
-    transform: rotate(-0deg);
+    transform: translatey(0px) rotate(0deg);
   }
-  20% {
-    transform: translatey(-5px);
-    transform: rotate(-2deg);
-  }
-  80% {
-    transform: translatey(5px);
-    transform: rotate(2deg);
+  50% {
+    transform: translatey(-25px) rotate(5deg);
   }
   100% {
-    transform: translatey(0px);
-    transform: rotate(-0deg);
+    transform: translatey(0px) rotate(0deg);
   }
 }
 

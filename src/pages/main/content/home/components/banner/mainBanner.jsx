@@ -8,7 +8,7 @@ import './mainBanner.scss'
 // Assets importation
 import box3d_Float from '@assets/branding/Illustration/3DFloatRound.png'
 import SeCool_Star from '@assets/branding/Illustration/EpicRound1.png'
-
+import BannerImage from '@assets/branding/SignIn_Image.png'
 
 function MainBanner() {
 
@@ -69,6 +69,7 @@ function MainBanner() {
                 <h1></h1>
             </div>
             <div className="side-50 spline">
+                <img src={BannerImage} alt="" width={'500px'} />
             </div>
         </div>
     </div>

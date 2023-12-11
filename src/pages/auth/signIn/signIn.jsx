@@ -13,7 +13,7 @@ import passwordIcon from '@assets/icon/png/icons8_good_pincode_60px.png'
 import doneIcon from '@assets/icon/png/icons8_ok_60px.png'
 import cancelIcon from '@assets/icon/png/icons8_cancel_60px.png'
 import loadIcon from '@assets/icon/png/icons8_stream_60px.png'
-import SignInImage from '@assets/branding/illustration/Illustration_Login.png'
+import SignInImage from '@assets/branding/Banner.png'
 import showeye from '@assets/icon/svg/showEye.svg';
 import hideeye from '@assets/icon/svg/hideEye.svg';
 
@@ -172,7 +172,7 @@ function SignIn() {
           </div>
 
           <div className="passForget">
-            <Link to="/password/reset">Mot de passe oublié?</Link>
+            <Link to="/password/reset" className='link-passForget'>Mot de passe oublié?</Link>
           </div>
         </div>
 

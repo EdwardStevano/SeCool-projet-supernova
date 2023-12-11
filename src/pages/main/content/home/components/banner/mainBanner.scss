@@ -1,5 +1,16 @@
 .banner {
-    height: 100vh;
+    // height: 86vh;
+    margin-top: -10px;
+    display: flex;
+
+    .side-50.spline{
+        text-align: center;
+
+        img{
+            position: relative;
+            top: -20px;
+        }
+    }
 }
 
 .banner .title-content{

@@ -23,6 +23,7 @@
     opacity: .6;
     font-weight: 500;
     padding: 2px 10px;
+    color: var(--darkFontColor);
     transition: .4s ease;
     border-radius: 10px;
 }
@@ -34,8 +35,13 @@
 }
 
 .authFooter-container .rightfooter {
+    color: var(--darkFontColor);
     display: flex;
     align-items: center;
+}
+
+.authFooter-container .rightfooter link{
+    color: var(--darkFontColor);
 }
 
 .mode-btn{

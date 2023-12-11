@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./__solution.scss";
+import "./solution.scss";
 import { InView } from "react-intersection-observer";
 
-// import ImageOne from "../../../../../../assets/image/forme/geometry-2361195_640.png";
+import ImageOne from "@assets/branding/Illustration/mogule1-1.png";
+import Roundtext from '@assets/branding/Illustration/RoundText_Dark.png'
 // import ImageTwo from "../../../../../../assets/image/logo/LogoSiriusMinimize.png";
 // import ImageThre from "../../../../../../assets/image/forme/pattern-1489782_640.png";
 // import SautImage from "../../../../../../assets/image/transparentImage/jakob-rosen-CTd5_C7p__8-unsplash-removebg.png";
@@ -12,6 +13,9 @@ import { InView } from "react-intersection-observer";
 const Solution = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
+
+  const scaleRef = useRef(null);
+
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -47,7 +51,7 @@ const Solution = () => {
           translateX: 0,
         },
         {
-          translateX: "-210vw",
+          translateX: "-200vw",
           ease: "none",
           duration: 1,
           scrollTrigger: {
@@ -58,11 +62,21 @@ const Solution = () => {
             pin: true,
           },
         }
+        
       );
       return () => {
         pin.kill();
       };
     }
+
+    // gsap.fromTo(scaleRef.current, {
+    //   scale: 0,
+    //   opacity: 0,
+    // }, {
+    //   scale: 1,
+    //   opacity: 1,
+    // })
+
   }, []);
 
   const [lettersRef, setLetterRef] = useArrayRef();
@@ -140,26 +154,56 @@ const Solution = () => {
     <div className="scroll-section-outer" id="solution">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
-          <div className="scroll-section sction1">
-            <h3>Les Solution que nous offrons</h3>
+          <div className="scroll-section section1">
+            <div className="super-container-p80 viewHorizontal section1">
+              <img src={ImageOne} alt="" width={'150px'} className="floatAnim" ref={scaleRef} />
+              <div className="text">
+                <small>Lorem ipsum dolor sit</small>
+                <div className="title">
+                  <h1>Les </h1>
+                  <span>Solutions</span>
+                  <h1>que nous offrons</h1>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde fugit assumenda voluptates pariatur, maxime id. Eos ipsum repudiandae laboriosam, sed est, aspernatur labore dolores nihil alias velit dolorem? Excepturi!</p>
+              </div>
+            
+              <div className="bottom-image">
+                <img src={Roundtext} alt="Round text" width={'100px'} />
+              </div>
+            </div>
+            
           </div>
-          <div className="scroll-section">
-            <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-              nesciunt! Reiciendis minima, nulla placeat, quidem nihil quia sed
-              inventore, laboriosam animi pariatur enim officiis provident eum
-              optio necessitatibus ipsam similique?
-            </h3>
+
+          <div className="scroll-section section2">
+          <div className="super-container-p80 viewHorizontal section2 flex">
+            <div className="side-50">
+              <div className="line1">
+                <h1>Line 1 eto</h1>
+              </div>
+              
+              <div className="line2">
+                <h1>line 2 eto</h1>
+              </div>
+
+              <div className="line2">
+                <h1>line 3 eto</h1>
+              </div>
+            </div>
+
+            <div className="side-50">
+            <h1>sdmfds;</h1>
+            </div>
+
+
+              
+            </div>
           </div>
+
           <div className="scroll-section section-3">
-            <div className="section-3-contenu">
-              <h3 className="lastTitle">Explorez nos multitudes de cours</h3>
-              <p className="smalltext">
-                Découvrez un monde d'opportunités éducatives avec notre vaste
-                gamme de cours. Explorez nos multitudes de programmes
-                soigneusement conçus pour répondre à divers intérêts et besoins
-                d'apprentissage.
-              </p>
+          <div className="super-container-p80 viewHorizontal section3">
+              <h3>Les Solution que nous offrons</h3>
+              <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde fugit assumenda voluptates pariatur, maxime id. Eos ipsum repudiandae laboriosam, sed est, aspernatur labore dolores nihil alias velit dolorem? Excepturi!</small>
             </div>
           </div>
         </div>

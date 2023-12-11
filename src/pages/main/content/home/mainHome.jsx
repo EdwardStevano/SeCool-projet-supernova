@@ -17,8 +17,8 @@ function MainHome() {
         <Band />
         <MainPresentaion />
         <MainCta />
-        <Problem />
-      <Solution/>
+        {/* <Problem /> */}
+        <Solution/>
     </div>
   );
 }

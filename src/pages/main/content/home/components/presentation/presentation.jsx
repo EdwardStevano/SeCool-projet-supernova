@@ -40,9 +40,10 @@ function Presentation() {
                 opacity:1,
                 ease: 'expo.in',
                 duration: 0.5,
+                
             });
             timeline.fromTo(".presentation-title2", {
-              x: 1000,
+              x: 500,
               y: 300,
               opacity:0,
               duration: 0.3,
@@ -55,12 +56,10 @@ function Presentation() {
           });
             ScrollTrigger.create({
               animation: timeline,
-              scrub: 3,
+              scrub: 1,
               start: 'top bottom',
             })
         })
-    
-
     }, animateRef)
 
   return (
