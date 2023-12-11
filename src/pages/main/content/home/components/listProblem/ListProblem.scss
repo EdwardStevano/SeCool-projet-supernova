@@ -1,0 +1,56 @@
+.list-problem-bloc {
+  color: var(--darkFontColor);
+  height: auto;
+  margin: 100px auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+
+  .listpbm {
+    .section-list-problem:nth-child(2n + 1) {
+      display: flex;
+      gap: 20px;
+      margin: 100px 0px;
+      position: relative;
+      height: auto;
+      .img-container-list-problem {
+        position: sticky;
+        top: 10px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .message-content-list-problem {
+        height: 140vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .section-list-problem:nth-child(2n + 2) {
+      display: flex;
+      gap: 60px;
+      margin: 100px 0px;
+      position: relative;
+      height: auto;
+      flex-direction: row-reverse;
+
+      .img-container-list-problem {
+        position: sticky;
+        top: 10px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .message-content-list-problem {
+        height: 140vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
