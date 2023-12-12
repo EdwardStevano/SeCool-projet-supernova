@@ -2,10 +2,11 @@ import React from "react";
 import "./perspective.scss";
 
 import imageMoutain from "../../../../../../assets/branding/img/imageparralax/montaigne.png";
+import imageColine from "../../../../../../assets/branding/img/imageparralax/COLINE.png";
 import imageNuage from "../../../../../../assets/branding/img/imageparralax/nuage.png";
 import imageSoleil from "../../../../../../assets/branding/img/imageparralax/soleil.png";
 import imageCielBleu from "../../../../../../assets/branding/img/imageparralax/cielBleu.png";
-import imageNature from "../../../../../../assets/branding/img/imageparralax/paysage.png";
+import imageNature from "../../../../../../assets/branding/img/imageparralax/URBANPARK.png";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -24,7 +25,7 @@ const Perspective = () => {
         scrollTrigger: {
           trigger: ".soleil-img",
           scrub: 3,
-          start: "bottom center",
+          start: "80% center",
           end: "bottom top",
         },
 
@@ -35,7 +36,7 @@ const Perspective = () => {
         scrollTrigger: {
           trigger: ".perspective-bloc",
           scrub: 0.5,
-          start: "bottom bottom",
+          start: "80% center",
           end: "bottom top",
         },
 
@@ -46,7 +47,7 @@ const Perspective = () => {
         scrollTrigger: {
           trigger: ".perspective-bloc",
           scrub: 0.5,
-          start: "bottom bottom",
+          start: "80% center",
           end: "bottom top",
         },
 
@@ -57,7 +58,7 @@ const Perspective = () => {
         scrollTrigger: {
           trigger: ".perspective-bloc",
           scrub: 0.5,
-          start: "bottom bottom",
+          start: "80% center",
           end: "bottom top",
         },
 
@@ -84,11 +85,17 @@ const Perspective = () => {
           background: `url(${imageCielBleu})`,
         }}
       >
+        <div
+          className="item soleil-img"
+          style={{
+            background: `url(${imageSoleil})`,
+          }}
+        ></div>
         <div className="item mountain-img">
           <img src={imageMoutain} alt="" />
         </div>
         <div className="item mountain-img2">
-          <img src={imageMoutain} alt="" />
+          <img src={imageColine} alt="" />
         </div>
         <div className="item nuage nuage-img nuage-1">
           <img src={imageNuage} alt="" />
@@ -99,12 +106,6 @@ const Perspective = () => {
         <div className="item nuage nuage-img nuage-3">
           <img src={imageNuage} alt="" />
         </div>
-        <div
-          className="item soleil-img"
-          style={{
-            background: `url(${imageSoleil})`,
-          }}
-        ></div>
         <div className="item nature-img">
           <img src={imageNature} alt="" />
         </div>

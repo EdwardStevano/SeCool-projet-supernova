@@ -22,11 +22,12 @@
     }
     .mountain-img2 {
       position: absolute;
-      bottom: 0px;
-      left: -100px;
+      bottom: 100px;
+      left: 30%;
+      z-index: 0;
       img {
-        width: 600px;
-        height: 400px;
+        width: 1200px;
+        height: 200px;
       }
     }
 
@@ -36,13 +37,13 @@
       position: absolute;
       left: 50%;
       background-color: crimson;
-      z-index: 3;
+      z-index: 0;
       top: 10px;
     }
     .nuage-img.nuage-1 {
       position: absolute;
       left: 60%;
-      top: 300px;
+      top: 100px;
       img {
         width: 400px;
         height: 200px;
@@ -51,7 +52,7 @@
     .nuage-img.nuage-2 {
       position: absolute;
       left: 10%;
-      top: 300px;
+      top: 100px;
       img {
         width: 400px;
         height: 200px;
@@ -60,7 +61,7 @@
     .nuage-img.nuage-3 {
       position: absolute;
       left: 40%;
-      top: 200px;
+      top: 150px;
       img {
         width: 400px;
         height: 200px;
